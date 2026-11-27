@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFlow | Quản lý lịch tập</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">G</div>
+            <div>
+                <h2>GymFlow</h2>
+                <span>WORKOUT PLANNER</span>
+            </div>
+        </div>
+
+        <p class="menu-label">MENU</p>
+
+        <nav>
+            <a href="index.html" class="nav-link active">▦ Dashboard</a>
+            <a href="schedule.html" class="nav-link">▣ Lịch tập</a>
+            <a href="exercises.html" class="nav-link">◫ Giáo án</a>
+            <a href="exercises.html#exercise-library" class="nav-link">♧ Bài tập</a>
+        </nav>
+
+
+        <div class="sidebar-bottom">
+            <div class="quote">
+                <span>YOUR DAILY MOTIVATION</span>
+                <p>“Stronger every day.”</p>
+            </div>
+            <p class="user-name">Thành viên GymFlow</p>
+        </div>
+    </aside>
+
+    <main class="main-content" id="dashboard">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">THỨ TƯ, NGÀY TẬP LUYỆN</p>
+                <h1>Chào mừng trở lại! 👋</h1>
+                <p class="subtitle">Hãy tiếp tục hành trình trở nên khỏe mạnh hơn.</p>
+            </div>
+            <div class="avatar">GF</div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <span class="hero-tag">WEEKLY FITNESS GOAL</span>
+                <h2>Mỗi ngày một chút,<br>mạnh mẽ hơn mỗi ngày.</h2>
+                <p>Lên kế hoạch, duy trì thói quen và chinh phục mục tiêu tập luyện của bạn.</p>
+                <a href="#schedule" class="primary-button">Xem lịch tập →</a>
+            </div>
+            <div class="hero-decoration">
+                <span>01</span>
+                <small>STAY<br>ACTIVE</small>
+            </div>
+        </section>
+
+        <section class="stats">
+            <article class="stat-card">
+                <div class="stat-icon">▦</div>
+                <p>Buổi tập tuần này</p>
+                <h3>04 <span>/ 05 buổi</span></h3>
+            </article>
+            <article class="stat-card">
+                <div class="stat-icon">◷</div>
+                <p>Tổng thời gian tập</p>
+                <h3>5.5 <span>giờ</span></h3>
+            </article>
+            <article class="stat-card">
+                <div class="stat-icon">✦</div>
+                <p>Mục tiêu tuần</p>
+                <h3>80<span>% hoàn thành</span></h3>
+            </article>
+        </section>
+
+        <section class="section" id="schedule">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR ROUTINE</p>
+                    <h2>Lịch tập tuần này</h2>
+                </div>
+                <a href="schedule.html" class="text-link">Xem tất cả →</a>
+            </div>
+
+            <div class="schedule-grid">
+                <article class="day-card completed">
+                    <span class="day">THỨ HAI</span>
+                    <h3>Push Day</h3>
+                    <p>Ngực · Vai · Tay sau</p>
+                    <span class="status">✓ Hoàn thành</span>
+                </article>
+                <article class="day-card completed">
+                    <span class="day">THỨ BA</span>
+                    <h3>Pull Day</h3>
+                    <p>Lưng · Tay trước</p>
+                    <span class="status">✓ Hoàn thành</span>
+                </article>
+                <article class="day-card today">
+                    <span class="day">THỨ TƯ</span>
+                    <h3>Leg Day</h3>
+                    <p>Chân · Mông · Bụng</p>
+                    <span class="status">● Hôm nay</span>
+                </article>
+                <article class="day-card">
+                    <span class="day">THỨ NĂM</span>
+                    <h3>Rest Day</h3>
+                    <p>Phục hồi cơ bắp</p>
+                    <span class="status rest">Nghỉ ngơi</span>
+                </article>
+                <article class="day-card">
+                    <span class="day">THỨ SÁU</span>
+                    <h3>Upper Body</h3>
+                    <p>Thân trên</p>
+                    <span class="status upcoming">Sắp tới</span>
+                </article>
+                <article class="day-card">
+                    <span class="day">THỨ BẢY</span>
+                    <h3>Cardio</h3>
+                    <p>Chạy bộ · Đạp xe</p>
+                    <span class="status upcoming">Sắp tới</span>
+                </article>
+                <article class="day-card">
+                    <span class="day">CHỦ NHẬT</span>
+                    <h3>Recovery</h3>
+                    <p>Giãn cơ · Đi bộ</p>
+                    <span class="status rest">Phục hồi</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="plans">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TRAINING PROGRAMS</p>
+                    <h2>Giáo án của bạn</h2>
+                </div>
+                <a href="schedule.html" class="text-link">Chi tiết →</a>
+            </div>
+
+            <div class="plan-grid">
+                <article class="plan-card">
+                    <div class="plan-number">01</div>
+                    <span class="plan-category">STRENGTH</span>
+                    <h3>Push Day</h3>
+                    <p>Phát triển nhóm cơ ngực, vai và tay sau.</p>
+                    <span class="plan-time">⏱ 60 phút</span>
+                </article>
+                <article class="plan-card">
+                    <div class="plan-number">02</div>
+                    <span class="plan-category">STRENGTH</span>
+                    <h3>Pull Day</h3>
+                    <p>Tập trung vào lưng và nhóm cơ tay trước.</p>
+                    <span class="plan-time">⏱ 55 phút</span>
+                </article>
+                <article class="plan-card">
+                    <div class="plan-number">03</div>
+                    <span class="plan-category">LOWER BODY</span>
+                    <h3>Leg Day</h3>
+                    <p>Tăng sức mạnh chân, mông và cơ bụng.</p>
+                    <span class="plan-time">⏱ 65 phút</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section exercise-section" id="exercises">
+            <div>
+                <p class="eyebrow">KEEP MOVING</p>
+                <h2>Sẵn sàng cho buổi tập tiếp theo?</h2>
+                <p>Hãy duy trì kỷ luật và từng bước hoàn thành mục tiêu của bạn.</p>
+            </div>
+            <a href="form.html" class="primary-button">+ Thêm lịch tập</a>
+        </section>
+
+        <footer>
+            <p>© 2026 GymFlow – Your workout, your progress.</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>

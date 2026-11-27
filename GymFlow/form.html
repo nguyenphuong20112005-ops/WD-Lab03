@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFlow | Thêm lịch tập</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">G</div>
+            <div>
+                <h2>GymFlow</h2>
+                <span>WORKOUT PLANNER</span>
+            </div>
+        </div>
+
+        <p class="menu-label">MENU</p>
+        <nav>
+            <a href="index.html" class="nav-link">▦ Dashboard</a>
+            <a href="schedule.html" class="nav-link active">▣ Lịch tập</a>
+            <a href="exercises.html" class="nav-link">◫ Giáo án</a>
+            <a href="exercises.html#exercise-library" class="nav-link">♧ Bài tập</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="quote">
+                <span>YOUR DAILY MOTIVATION</span>
+                <p>“Stronger every day.”</p>
+            </div>
+            <p class="user-name">Thành viên GymFlow</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">PLAN YOUR WORKOUT</p>
+                <h1>Thêm lịch tập mới</h1>
+                <p class="subtitle">Tạo kế hoạch tập luyện phù hợp với mục tiêu của bạn.</p>
+            </div>
+            <div class="avatar">GF</div>
+        </header>
+
+        <section class="form-layout">
+
+            <div class="workout-form-card">
+                <div class="form-heading">
+                    <span class="hero-tag">NEW WORKOUT</span>
+                    <h2>Thông tin buổi tập</h2>
+                    <p>Điền thông tin bên dưới để tạo lịch tập mới.</p>
+                </div>
+
+                <form action="form-result.html" method="get">
+
+                    <div class="form-group">
+                        <label for="workout-name">Tên buổi tập</label>
+                        <input type="text" id="workout-name" name="workout-name"
+                            placeholder="Ví dụ: Push Day, Leg Day..." required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="workout-type">Loại hình tập luyện</label>
+                            <select id="workout-type" name="workout-type" required>
+                                <option value="">Chọn loại hình</option>
+                                <option>Strength Training</option>
+                                <option>Cardio</option>
+                                <option>Full Body</option>
+                                <option>Recovery</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="muscle">Nhóm cơ chính</label>
+                            <select id="muscle" name="muscle" required>
+                                <option value="">Chọn nhóm cơ</option>
+                                <option>Ngực</option>
+                                <option>Lưng</option>
+                                <option>Vai</option>
+                                <option>Tay</option>
+                                <option>Chân và mông</option>
+                                <option>Toàn thân</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="workout-date">Ngày tập</label>
+                            <input type="date" id="workout-date" name="workout-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="workout-time">Giờ tập</label>
+                            <input type="time" id="workout-time" name="workout-time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="duration">Thời lượng (phút)</label>
+                            <input type="number" id="duration" name="duration" min="10" max="300"
+                                placeholder="Ví dụ: 60" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="level">Cường độ tập</label>
+                            <select id="level" name="level" required>
+                                <option value="">Chọn cường độ</option>
+                                <option>Nhẹ</option>
+                                <option>Trung bình</option>
+                                <option>Cao</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Ghi chú buổi tập</label>
+                        <textarea id="description" name="description" rows="4"
+                            placeholder="Nhập bài tập dự kiến hoặc ghi chú của bạn..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="schedule.html" class="secondary-button">Hủy</a>
+                        <button type="submit" class="primary-button">Tạo lịch tập →</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <aside class="form-aside">
+                <div class="aside-symbol">✦</div>
+                <span class="hero-tag">TRAINING TIP</span>
+                <h3>Lập kế hoạch<br>để tiến bộ tốt hơn.</h3>
+                <p>Một lịch tập hợp lý giúp bạn duy trì thói quen, phân bổ thời gian vận động và nghỉ ngơi hiệu quả.</p>
+
+                <div class="tip-divider"></div>
+
+                <div class="tip-item">
+                    <strong>01</strong>
+                    <div>
+                        <b>Khởi động</b>
+                        <p>Làm nóng cơ thể trước khi tập.</p>
+                    </div>
+                </div>
+
+                <div class="tip-item">
+                    <strong>02</strong>
+                    <div>
+                        <b>Đúng kỹ thuật</b>
+                        <p>Ưu tiên tư thế đúng và an toàn.</p>
+                    </div>
+                </div>
+
+                <div class="tip-item">
+                    <strong>03</strong>
+                    <div>
+                        <b>Phục hồi</b>
+                        <p>Dành thời gian nghỉ ngơi phù hợp.</p>
+                    </div>
+                </div>
+            </aside>
+
+        </section>
+
+        <footer>
+            <p>© 2026 GymFlow – Your workout, your progress.</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

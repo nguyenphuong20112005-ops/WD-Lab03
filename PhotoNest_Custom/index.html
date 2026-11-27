@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="FitNest — Thư viện ảnh tập luyện">
+    <title>FitNest | Thư viện ảnh tập luyện</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#gallery">Đến thư viện ảnh</a>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-icon">◈</span>
+                <span>fit<b>nest</b><small>FITNESS GALLERY</small></span>
+            </a>
+            <p class="nav-label">KHÔNG GIAN CỦA BẠN</p>
+            <nav class="nav-links" aria-label="Điều hướng">
+                <a class="nav-active" href="#gallery"><span>▦</span> Thư viện ảnh</a>
+                <a href="#collections"><span>▤</span> Bộ sưu tập</a>
+                <a href="#add-photo"><span>⊕</span> Thêm ảnh</a>
+            </nav>
+
+            <p class="nav-label">BỘ SƯU TẬP</p>
+            <div class="side-collections">
+                <a href="#collections"><span class="dot coral"></span> Gym <small>03</small></a>
+                <a href="#collections"><span class="dot aqua"></span> Cardio <small>03</small></a>
+                <a href="#collections"><span class="dot purple"></span> Yoga <small>03</small></a>
+                <a href="#collections"><span class="dot yellow"></span> Outdoor <small>03</small></a>
+            </div>
+
+            <div class="sidebar-end">
+                <span class="sidebar-end-icon">✦</span>
+                <strong>Sống khỏe mỗi ngày</strong>
+                <p>Lưu giữ hành trình, nuôi dưỡng động lực tập luyện.</p>
+            </div>
+        </aside>
+
+        <div class="main">
+            <header class="topbar">
+                <div class="breadcrumbs">Không gian của tôi <span>/</span> <b>Thư viện ảnh</b></div>
+                <div class="profile">
+                    <span class="status-dot"></span> Sẵn sàng ngoại tuyến
+                    <span class="avatar">FN</span>
+                </div>
+            </header>
+
+            <main class="content">
+                <section class="hero">
+                    <div class="hero-copy">
+                        <span class="overline">YOUR PERSONAL FITNESS SPACE</span>
+                        <h1>Hành trình khỏe mạnh<br><em>bắt đầu từ hôm nay.</em></h1>
+                        <p>Lưu giữ những khoảnh khắc tập luyện, theo dõi nguồn cảm hứng và khám phá hành trình vận động
+                            của bạn.</p>
+                        <a class="btn btn-primary" href="#add-photo">＋ Thêm ảnh tập luyện</a>
+                    </div>
+                    <div class="hero-art" aria-hidden="true">
+                        <img class="hero-back" src="assets/08-yoga-warrior-pose.jpg" alt="">
+                        <img class="hero-front" src="assets/05-cardio-park-run.jpg" alt="">
+                        <span class="spark">✳</span>
+                    </div>
+                </section>
+
+                <section class="summary" aria-label="Tổng quan thư viện">
+                    <div class="summary-item">
+                        <span class="summary-icon icon-one">▧</span>
+                        <div><strong>12</strong>
+                            <p>Ảnh tập luyện</p>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-icon icon-two">▤</span>
+                        <div><strong>04</strong>
+                            <p>Bộ môn</p>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-icon icon-three">♡</span>
+                        <div><strong>04</strong>
+                            <p>Bộ sưu tập</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="library-section" id="gallery">
+                    <div class="section-head">
+                        <div>
+                            <span class="overline">THƯ VIỆN ẢNH</span>
+                            <h2>Tất cả ảnh tập luyện <span class="count-badge">12 ảnh</span></h2>
+                            <p>Lọc theo hoạt động hoặc chọn một hình để xem chi tiết.</p>
+                        </div>
+                        <a href="#add-photo" class="quiet-action">＋ Thêm ảnh</a>
+                    </div>
+
+                    <div class="filter-wrap">
+                        <input class="filter-input" type="radio" id="filter-all" name="filter" checked>
+                        <input class="filter-input" type="radio" id="filter-nature" name="filter">
+                        <input class="filter-input" type="radio" id="filter-travel" name="filter">
+                        <input class="filter-input" type="radio" id="filter-city" name="filter">
+                        <input class="filter-input" type="radio" id="filter-life" name="filter">
+
+                        <div class="filter-bar" role="group" aria-label="Lọc theo chủ đề">
+                            <label for="filter-all">Tất cả</label>
+                            <label for="filter-nature">Gym</label>
+                            <label for="filter-travel">Cardio</label>
+                            <label for="filter-city">Yoga</label>
+                            <label for="filter-life">Outdoor</label>
+                        </div>
+
+                        <div class="gallery-grid">
+                            <article class="photo-card category-nature">
+                                <a class="photo-preview" href="#photo-1" aria-label="Xem ảnh Strength Session">
+                                    <img src="assets/01-gym-strength-dumbbells.jpg" alt="Strength Session" width="800"
+                                        height="600" loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Strength Session</h3>
+                                        <p>Gym</p>
+                                    </div>
+                                    <a href="assets/01-gym-strength-dumbbells.jpg"
+                                        download="01-gym-strength-dumbbells.jpg" class="download-link"
+                                        aria-label="Tải Strength Session" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-travel">
+                                <a class="photo-preview" href="#photo-2" aria-label="Xem ảnh Morning Run">
+                                    <img src="assets/05-cardio-park-run.jpg" alt="Morning Run" width="800" height="600"
+                                        loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Morning Run</h3>
+                                        <p>Cardio</p>
+                                    </div>
+                                    <a href="assets/05-cardio-park-run.jpg" download="05-cardio-park-run.jpg"
+                                        class="download-link" aria-label="Tải Morning Run" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-city">
+                                <a class="photo-preview" href="#photo-3" aria-label="Xem ảnh Yoga Flow">
+                                    <img src="assets/08-yoga-warrior-pose.jpg" alt="Yoga Flow" width="800" height="600"
+                                        loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Yoga Flow</h3>
+                                        <p>Yoga</p>
+                                    </div>
+                                    <a href="assets/08-yoga-warrior-pose.jpg" download="08-yoga-warrior-pose.jpg"
+                                        class="download-link" aria-label="Tải Yoga Flow" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-life">
+                                <a class="photo-preview" href="#photo-4" aria-label="Xem ảnh City Cycling">
+                                    <img src="assets/10-outdoor-cycling-mountain.jpg" alt="City Cycling" width="800"
+                                        height="600" loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>City Cycling</h3>
+                                        <p>Outdoor</p>
+                                    </div>
+                                    <a href="assets/10-outdoor-cycling-mountain.jpg"
+                                        download="10-outdoor-cycling-mountain.jpg" class="download-link"
+                                        aria-label="Tải City Cycling" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-life">
+                                <a class="photo-preview" href="#photo-5" aria-label="Xem ảnh Outdoor Ride">
+                                    <img src="assets/11-outdoor-cycling-sunset.jpg" alt="Outdoor Ride" width="800"
+                                        height="600" loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Outdoor Ride</h3>
+                                        <p>Outdoor</p>
+                                    </div>
+                                    <a href="assets/11-outdoor-cycling-sunset.jpg"
+                                        download="11-outdoor-cycling-sunset.jpg" class="download-link"
+                                        aria-label="Tải Outdoor Ride" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-city">
+                                <a class="photo-preview" href="#photo-6" aria-label="Xem ảnh Recovery Stretch">
+                                    <img src="assets/09-yoga-mat-and-bottle.jpg" alt="Recovery Stretch" width="800"
+                                        height="600" loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Recovery Stretch</h3>
+                                        <p>Yoga</p>
+                                    </div>
+                                    <a href="assets/09-yoga-mat-and-bottle.jpg" download="10-yoga-seated-stretch.jpg"
+                                        class="download-link" aria-label="Tải Recovery Stretch" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-travel">
+                                <a class="photo-preview" href="#photo-7" aria-label="Xem ảnh HIIT Training">
+                                    <img src="assets/06-cardio-treadmill.jpg" alt="HIIT Training" width="800"
+                                        height="600" loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>HIIT Training</h3>
+                                        <p>Cardio</p>
+                                    </div>
+                                    <a href="assets/06-cardio-treadmill.jpg" download="06-cardio-treadmill.jpg"
+                                        class="download-link" aria-label="Tải HIIT Training" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-travel">
+                                <a class="photo-preview" href="#photo-8" aria-label="Xem ảnh Evening Run">
+                                    <img src="assets/04-cardio-city-run.jpg" alt="Evening Run" width="800" height="600"
+                                        loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Evening Run</h3>
+                                        <p>Cardio</p>
+                                    </div>
+                                    <a href="assets/04-cardio-city-run.jpg" download="04-cardio-city-run.jpg"
+                                        class="download-link" aria-label="Tải Evening Run" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-city">
+                                <a class="photo-preview" href="#photo-9" aria-label="Xem ảnh Balance Practice">
+                                    <img src="assets/07-yoga-meditation.jpg" alt="Balance Practice" width="800"
+                                        height="600" loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Balance Practice</h3>
+                                        <p>Yoga</p>
+                                    </div>
+                                    <a href="assets/07-yoga-meditation.jpg" download="07-yoga-meditation.jpg"
+                                        class="download-link" aria-label="Tải Balance Practice" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-nature">
+                                <a class="photo-preview" href="#photo-10" aria-label="Xem ảnh Weight Training">
+                                    <img src="assets/02-gym-barbell-squat.jpg" alt="Weight Training" width="800"
+                                        height="600" loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Weight Training</h3>
+                                        <p>Gym</p>
+                                    </div>
+                                    <a href="assets/02-gym-barbell-squat.jpg" download="02-gym-barbell-squat.jpg"
+                                        class="download-link" aria-label="Tải Weight Training" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-nature">
+                                <a class="photo-preview" href="#photo-11" aria-label="Xem ảnh Gym Motivation">
+                                    <img src="assets/03-gym-equipment.jpg" alt="Gym Motivation" width="800" height="600"
+                                        loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Gym Motivation</h3>
+                                        <p>Gym</p>
+                                    </div>
+                                    <a href="assets/03-gym-equipment.jpg" download="03-gym-equipment.jpg"
+                                        class="download-link" aria-label="Tải Gym Motivation" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+
+                            <article class="photo-card category-life">
+                                <a class="photo-preview" href="#photo-12" aria-label="Xem ảnh Weekend Hike">
+                                    <img src="assets/12-outdoor-hiking.jpg" alt="Weekend Hike" width="800" height="600"
+                                        loading="lazy">
+                                    <span class="view-indicator">↗</span>
+                                </a>
+                                <div class="photo-caption">
+                                    <div>
+                                        <h3>Weekend Hike</h3>
+                                        <p>Outdoor</p>
+                                    </div>
+                                    <a href="assets/12-outdoor-hiking.jpg" download="12-outdoor-hiking.jpg"
+                                        class="download-link" aria-label="Tải Weekend Hike" title="Tải ảnh">↓</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="collections-section" id="collections">
+                    <div class="section-head">
+                        <div>
+                            <span class="overline">BỘ SƯU TẬP</span>
+                            <h2>Bộ sưu tập tập luyện</h2>
+                            <p>Sắp xếp hình ảnh theo từng bộ môn và hoạt động.</p>
+                        </div>
+                    </div>
+                    <div class="collection-grid">
+                        <a class="collection-tile tile-travel" href="#gallery">
+                            <span>03 HÌNH ẢNH</span>
+                            <h3>Cardio</h3>
+                            <p>Chạy bộ và vận động sức bền</p><b>↗</b>
+                        </a>
+                        <a class="collection-tile tile-nature" href="#gallery">
+                            <span>03 HÌNH ẢNH</span>
+                            <h3>Gym</h3>
+                            <p>Sức mạnh và rèn luyện thể lực</p><b>↗</b>
+                        </a>
+                        <a class="collection-tile tile-city" href="#gallery">
+                            <span>03 HÌNH ẢNH</span>
+                            <h3>Yoga</h3>
+                            <p>Cân bằng và dẻo dai</p><b>↗</b>
+                        </a>
+                        <a class="collection-tile tile-life" href="#gallery">
+                            <span>03 HÌNH ẢNH</span>
+                            <h3>Outdoor</h3>
+                            <p>Khám phá và vận động ngoài trời</p><b>↗</b>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="form-section" id="add-photo">
+                    <div class="section-head">
+                        <div>
+                            <span class="overline">THÊM ẢNH TẬP LUYỆN</span>
+                            <h2>Thông tin buổi tập</h2>
+                            <p>Điền thông tin hình ảnh để lưu dấu hành trình tập luyện của bạn.</p>
+                        </div>
+                    </div>
+                    <div class="form-layout">
+                        <form class="photo-form" action="form-result.html" method="get">
+                            <div class="field">
+                                <label for="photo-file">Chọn ảnh tập luyện <span>*</span></label>
+                                <div class="file-box">
+                                    <span class="file-symbol">↥</span>
+                                    <div><strong>Chọn ảnh từ thiết bị</strong><small>PNG, JPG, WEBP hoặc SVG</small>
+                                    </div>
+                                    <input type="file" id="photo-file" name="photo" accept="image/*" required>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="photo-title">Tên hoạt động <span>*</span></label>
+                                    <input id="photo-title" name="title" type="text" placeholder="Ví dụ: Buổi tập chân"
+                                        minlength="2" maxlength="80" required>
+                                </div>
+                                <div class="field">
+                                    <label for="photo-category">Bộ môn <span>*</span></label>
+                                    <select id="photo-category" name="category" required>
+                                        <option value="" disabled selected>Chọn chủ đề</option>
+                                        <option>Gym</option>
+                                        <option>Cardio</option>
+                                        <option>Yoga</option>
+                                        <option>Outdoor</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="photo-date">Ngày tập luyện</label>
+                                    <input id="photo-date" name="date" type="date">
+                                </div>
+                                <div class="field">
+                                    <label for="photo-author">Người tập</label>
+                                    <input id="photo-author" name="author" type="text" placeholder="Tên người tập">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="photo-description">Mô tả</label>
+                                <textarea id="photo-description" name="description" rows="4" maxlength="500"
+                                    placeholder="Mô tả bài tập, cảm nhận hoặc mục tiêu..."></textarea>
+                            </div>
+
+                            <fieldset class="privacy-field">
+                                <legend>Chế độ hiển thị</legend>
+                                <label><input type="radio" name="visibility" value="private" checked> Cá nhân</label>
+                                <label><input type="radio" name="visibility" value="public"> Công khai</label>
+                            </fieldset>
+
+                            <div class="form-actions">
+                                <button type="reset" class="btn btn-secondary">Làm mới</button>
+                                <button type="submit" class="btn btn-primary">Gửi thông tin ↗</button>
+                            </div>
+                        </form>
+
+                        <aside class="form-aside">
+                            <div class="aside-illustration">
+                                <img src="assets/03-gym-equipment.jpg" alt="Thiết bị tập luyện">
+                            </div>
+                            <h3>Ghi lại một cột mốc mới</h3>
+                            <p>Mỗi buổi tập là một bước tiến. Hãy ghi lại hoạt động và cảm nhận để theo dõi hành trình
+                                của bạn.</p>
+                        </aside>
+                    </div>
+                </section>
+
+                <footer class="footer">
+                    <span>◈ fit<b>nest</b></span>
+                    <span>Thư viện ảnh tập luyện</span>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <section class="modal" id="photo-1" aria-label="Chi tiết Strength Session">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/01-gym-strength-dumbbells.jpg" alt="Strength Session">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Strength Session</h2>
+                    <p>Gym · JPG</p>
+                </div>
+                <a href="assets/01-gym-strength-dumbbells.jpg" download="01-gym-strength-dumbbells.jpg"
+                    class="btn btn-primary">↓ Tải ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-2" aria-label="Chi tiết Morning Run">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/05-cardio-park-run.jpg" alt="Morning Run">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Morning Run</h2>
+                    <p>Cardio · JPG</p>
+                </div>
+                <a href="assets/05-cardio-park-run.jpg" download="05-cardio-park-run.jpg" class="btn btn-primary">↓ Tải
+                    ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-3" aria-label="Chi tiết Yoga Flow">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/08-yoga-warrior-pose.jpg" alt="Yoga Flow">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Yoga Flow</h2>
+                    <p>Yoga · JPG</p>
+                </div>
+                <a href="assets/08-yoga-warrior-pose.jpg" download="08-yoga-warrior-pose.jpg" class="btn btn-primary">↓
+                    Tải ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-4" aria-label="Chi tiết City Cycling">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/10-outdoor-cycling-mountain.jpg" alt="City Cycling">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>City Cycling</h2>
+                    <p>Outdoor · JPG</p>
+                </div>
+                <a href="assets/10-outdoor-cycling-mountain.jpg" download="10-outdoor-cycling-mountain.jpg"
+                    class="btn btn-primary">↓ Tải ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-5" aria-label="Chi tiết Outdoor Ride">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/11-outdoor-cycling-sunset.jpg" alt="Outdoor Ride">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Outdoor Ride</h2>
+                    <p>Outdoor · JPG</p>
+                </div>
+                <a href="assets/11-outdoor-cycling-sunset.jpg" download="11-outdoor-cycling-sunset.jpg"
+                    class="btn btn-primary">↓ Tải ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-6" aria-label="Chi tiết Recovery Stretch">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/09-yoga-mat-and-bottle.jpg" alt="Recovery Stretch">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Recovery Stretch</h2>
+                    <p>Yoga · JPG</p>
+                </div>
+                <a href="assets/09-yoga-mat-and-bottle.jpg" download="10-yoga-seated-stretch.jpg"
+                    class="btn btn-primary">↓ Tải ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-7" aria-label="Chi tiết HIIT Training">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/06-cardio-treadmill.jpg" alt="HIIT Training">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>HIIT Training</h2>
+                    <p>Cardio · JPG</p>
+                </div>
+                <a href="assets/06-cardio-treadmill.jpg" download="06-cardio-treadmill.jpg" class="btn btn-primary">↓
+                    Tải ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-8" aria-label="Chi tiết Evening Run">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/04-cardio-city-run.jpg" alt="Evening Run">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Evening Run</h2>
+                    <p>Cardio · JPG</p>
+                </div>
+                <a href="assets/04-cardio-city-run.jpg" download="04-cardio-city-run.jpg" class="btn btn-primary">↓ Tải
+                    ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-9" aria-label="Chi tiết Balance Practice">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/07-yoga-meditation.jpg" alt="Balance Practice">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Balance Practice</h2>
+                    <p>Yoga · JPG</p>
+                </div>
+                <a href="assets/07-yoga-meditation.jpg" download="07-yoga-meditation.jpg" class="btn btn-primary">↓ Tải
+                    ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-10" aria-label="Chi tiết Weight Training">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/02-gym-barbell-squat.jpg" alt="Weight Training">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Weight Training</h2>
+                    <p>Gym · JPG</p>
+                </div>
+                <a href="assets/02-gym-barbell-squat.jpg" download="02-gym-barbell-squat.jpg" class="btn btn-primary">↓
+                    Tải ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-11" aria-label="Chi tiết Gym Motivation">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/03-gym-equipment.jpg" alt="Gym Motivation">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Gym Motivation</h2>
+                    <p>Gym · JPG</p>
+                </div>
+                <a href="assets/03-gym-equipment.jpg" download="03-gym-equipment.jpg" class="btn btn-primary">↓ Tải
+                    ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" id="photo-12" aria-label="Chi tiết Weekend Hike">
+        <a class="modal-shade" href="#gallery" aria-label="Đóng"></a>
+        <div class="modal-window">
+            <a class="modal-close" href="#gallery" aria-label="Đóng">×</a>
+            <img src="assets/12-outdoor-hiking.jpg" alt="Weekend Hike">
+            <div class="modal-meta">
+                <div><span class="overline">CHI TIẾT ẢNH</span>
+                    <h2>Weekend Hike</h2>
+                    <p>Outdoor · JPG</p>
+                </div>
+                <a href="assets/12-outdoor-hiking.jpg" download="12-outdoor-hiking.jpg" class="btn btn-primary">↓ Tải
+                    ảnh</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
